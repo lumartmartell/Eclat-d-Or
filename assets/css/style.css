@@ -505,22 +505,27 @@ h3 {
     color: var(--secondary-color);
 }
 
-.product-reviews {
+.new .product-reviews {
     display: flex;
     gap: 10px;
     align-items: center;
     margin: 20px 0;
 }
 
-.product-reviews-stars {
+.new .product-reviews-stars {
     display: flex;
     gap: 0;
 }
 
-.product-reviews p {
+.new .product-reviews-stars img {
+   width: 16px;
+   height: 16px;
+}
+
+.new .product-reviews p {
     font-style: italic;
     font-size: var(--font-size-base);
-    line-height: 100%;
+    line-height: auto;
     letter-spacing: -0.2px;
     color: var(--secondary-color);
     font-weight: 300;
@@ -670,6 +675,33 @@ h3 {
 .catalog__products-card-11 { grid-area: 3 / 2 / 4 / 3; }
 .catalog__products-card-12 { grid-area: 3 / 3 / 4 / 4; }
 
+
+.catalog__products .product-reviews {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.catalog__products .product-reviews-stars {
+    display: flex;
+    gap: 0;
+}
+
+.catalog__products .product-reviews-stars img {
+    width: 16px;
+    height: 16px;
+}
+
+.catalog__products .product-reviews p {
+    font-style: italic;
+    font-size: var(--font-size-base);
+    line-height: auto;
+    letter-spacing: -0.2px;
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
 .catalog__products .new__products-card {
     position: relative;
     width: 268px;
@@ -788,13 +820,26 @@ h4 {
     font-weight: 400;
 }
 
-.product-reviews-stars img {
+.card .product-reviews {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card .product-reviews-stars img {
     width: 24px;
     height: 24px;
 }
 
-.product-reviews p {
+.card .product-reviews p {
+    font-style: italic;
     font-size: var(--font-size-lg);
+    line-height: auto;
+    letter-spacing: -0.2px;
+    color: var(--secondary-color);
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .card .category {
@@ -895,6 +940,32 @@ h4 {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+}
+
+.recommendations-catalog__products .product-reviews {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.recommendations-catalog__products .product-reviews-stars {
+    display: flex;
+    gap: 0;
+}
+
+.recommendations-catalog__products .product-reviews-stars img {
+    width: 16px;
+    height: 16px;
+}
+
+.recommendations-catalog__products .product-reviews p {
+    font-style: italic;
+    font-size: var(--font-size-base);
+    line-height: auto;
+    letter-spacing: -0.2px;
+    color: var(--secondary-color);
+    font-weight: 300;
 }
 
 .recommendations-catalog__products .new__products-card {
